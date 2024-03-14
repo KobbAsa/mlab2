@@ -60,3 +60,5 @@ fs.readFile(inputFile, 'utf8', (err, data) => {
         process.exit(1);
     }
 });
+
+some text for bad commit
