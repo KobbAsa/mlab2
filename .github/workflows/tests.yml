@@ -25,5 +25,11 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run unit tests
-        run: node ./tests/converterTests.js
+      - name: Run ANSI Converter unit tests
+        run: node ./tests/ansiConverterTests.js
+
+      - name: Run HTML Converter unit tests
+        run: node ./tests/htmlConverterTests.js
+
+      - name: Run Validation unit tests
+        run: node ./tests/validationsTests.js
