@@ -1,5 +1,8 @@
 const fs = require('fs');
-const { convertMarkdownToHtml, convertMarkdownToAnsi } = require('./converter');
+const convertMarkdownToHtml = require('./converters/htmlConverter');
+const convertMarkdownToAnsi = require('./converters/ansiConverter');
+const checkForUnmatchedMarkers = require('./validators/unmatchedMarkersValidator');
+const checkForNesting = require('./validators/nestingValidator');
 
 const inputFile = process.argv[2];
 let outputFile;
@@ -23,6 +26,14 @@ fs.readFile(inputFile, 'utf8', (err, data) => {
     if (err) {
         console.error(`Error reading file: ${inputFile}`, err);
         process.exit(1);
+    }
+
+    if (!checkForUnmatchedMarkers(data)) {
+        throw new Error('Unmatched markdown markers found');
+    }
+
+    if (!checkForNesting(data)) {
+        throw new Error('Nesting detected');
     }
 
     try {
