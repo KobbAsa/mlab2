@@ -24,7 +24,7 @@ function convertMarkdownToAnsi(markdown) {
         }
     });
 
-    return ansiText + ANSI_RESET;
+    return ansiText.trimEnd();
 }
 
 module.exports = convertMarkdownToAnsi;
