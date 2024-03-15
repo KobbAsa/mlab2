@@ -18,19 +18,19 @@ npm install
 To convert a Markdown file to HTML and specify an output file, use the following command:
 
 ```bash
- node node src/main.js input.md --out output.html --format=html
+ node src/main.js input.md --out output.html --format=html
 ```
 
 or
 
 ```bash
- node node src/main.js input.md --out output.html
+ node src/main.js input.md --out output.html
 ```
 
 To convert a Markdown file to ANSI and specify an output file, use the following command:
 
 ```bash
- node node src/main.js input.md --out output.txt --format=ansi
+  node src/main.js input.md --out output.txt --format=ansi
 ```
 
 Here **input.md** is the path to your Markdown file, and **output.html** or **output.txt** is the path where you wish to save the HTML or ANSI file.
@@ -38,7 +38,7 @@ Here **input.md** is the path to your Markdown file, and **output.html** or **ou
 If you do not specify an output file, the ANSI will be outputted to the console.
 
 ```bash
-node node src/main.js input.md
+ node src/main.js input.md
 ```
 
 ## Tests Usage
@@ -48,7 +48,7 @@ Just go to tests directory and run whatever test you want.
 For example:
 ```bash
 cd test
-node .\tests\ansiConverterTests.js    
+node ansiConverterTests.js    
 ```
 
 The results of tests will be shown in console with marks and explanation.
