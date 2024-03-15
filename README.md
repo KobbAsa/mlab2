@@ -64,5 +64,6 @@ Failed CI tests [here](https://github.com/KobbAsa/mlab2/commit/f1d45f9186a5b958a
 
 # Summary
 To be honest, I wrote such tests for the first time, so I can't compare with anything from my experience.
-However, the tests themselves are very useful for pushes and pr`s, in order to be sure and test every function in project and 
-every other case automatically, instead of doing it manually through command prompt.
+The tests themselves are written "on snot" and are very simple (like the converter itself tbf).
+However, even these tests are very useful for pushes and pr`s, in order to be sure and test every function in project and 
+every other case automatically, instead of doing it manually through command prompt before commit.
