@@ -1,4 +1,4 @@
-# Upgraded Markdown to HTML Converter
+# Upgraded Markdown to HTML/ANSI Converter
 
 This application converts Markdown files into HTML or ANSI format. It uses Node.js to read Markdown files and generates
 the corresponding HTML or ANSI, which can then be written to a file or outputted to the console.
