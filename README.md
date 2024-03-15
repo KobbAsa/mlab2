@@ -41,6 +41,18 @@ If you do not specify an output file, the ANSI will be outputted to the console.
 node node src/main.js input.md
 ```
 
+## Tests Usage
+
+Just go to tests directory and run whatever test you want.
+
+For example:
+```bash
+cd test
+node .\tests\ansiConverterTests.js    
+```
+
+The results of tests will be shown in console with marks and explanation.
+
 # User Instructions
 * The input file must be in Markdown format.
 * Ensure that all Markdown markers are correctly opened and closed.
